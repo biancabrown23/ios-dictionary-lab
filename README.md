@@ -12,6 +12,18 @@ Fork and clone this repo. On your fork, answer and commit the follow questions. 
 - Translate at least 3 of the capital names into another language.
 
 
+var citiesDict = ["Canada" : "Ottowa", "Greece" : "Athens", "Libya" : "Tripoli"]
+
+citiesDict["Andorra"] = "Andorra la Valla" // this adds another key:value to add to the dictonary 
+citiesDict["Estonia"] = "Tallinn" // this adds one more key:value to the dictonary 
+
+
+citiesDict["Canada"] = "カナダ" // this changes the value of the key "Canada" to have a new value which is now Canada in another language. 
+citiesDict["Libya"] = "カナダ" 
+citiesDict["Estonia"] = "エストニア"
+// now the dictionary that we have should be updated to show the values of 3 keys in English & the other 3 to be in Japanese.
+print(citiesDict)
+
 ## Question 2
 
 `var someDict:[String:Int] = ["One": 1, "Two": 4, "Three": 9, "Four": 16, "Five": 25]`
