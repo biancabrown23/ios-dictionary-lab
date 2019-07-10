@@ -30,16 +30,37 @@ print(citiesDict)
 
 - Using `someDict`, add together the values associated with "Three" and "Five" and print the result.
 
+print(someDict["Three"]! + someDict["Five"]!)
+
 - Add values to the dictionary for the keys "Six" and "Seven".
+someDict["Six"] = 36
+someDict["Seven"] = 49
 
 - Make a key called `productUpToSeven` and set its value equal to the product of all the values.
 
+for number in someDict.keys {
+    holder *= someDict[number]!
+}
+someDict["productUpToSeven"] = holder
+
+print(holder)
+    
 - Make a key called `sumUpToSix` and set its value equal to the sum of the keys "One", "Two", "Three", "Four", "Five" and "Six".
+
+someDict["sumUpToSix"]
 
 - Remove the new keys made in the previous two steps
 
-- Add 2 to every value inside of `someDict`.
+someDict.removeValue(forKey: "Six")
+someDict.removeValue(forKey: "Seven")
+print(someDict)
 
+- Add 2 to every value inside of `someDict`.
+for (key,value) in someDict {
+    someDict[key] = value + 2
+}
+
+print(someDict)
 
 ## Question 3
 
@@ -100,6 +121,9 @@ var code = [
 
 var message = "hello world"
 ```
+for character in message {
+    
+}
 
 You are also given an `encodedMessage` which contains only lowercase letters and spaces. Use the `code` dictionary to decode the message and print it.
 `var encodedMessage = "uijt nfttbhf jt ibse up sfbe"`
